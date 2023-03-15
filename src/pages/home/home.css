@@ -1,0 +1,216 @@
+.home{
+    padding-top:2rem ;
+    background-image: url('../../images/bkg-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: 95vh;
+    
+}
+.home-cont{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.home-cont-middle{
+    display: flex;
+    width: 500px;
+}
+.home-cont-middle h1 {
+    font-size: 5rem;
+}
+
+.home-cont-middle-social{
+    position: absolute;
+    right: -4rem;
+    top: 20rem;
+    display: flex;
+    padding: 1rem;
+    gap:1rem;
+    transform: rotate(-90deg);
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+.home-cont-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.home-cont-bottom-left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: bold;
+    min-width: 150px;  
+     transition: all .2s ease-in-out;
+
+}
+.home-cont-bottom-left button,
+.home-cont-bottom-right button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;  
+}
+.home-cont-bottom-left:hover {
+transform: scale(1.03);    
+}
+.home-cont-bottom-left-icon,
+.home-cont-bottom-right button{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+.home-cont-bottom-right{
+    display: flex;
+    gap: 1rem;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.15);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.8px);
+-webkit-backdrop-filter: blur(5.8px);
+}
+
+#home-cont-bottom-right-special-btn{
+    background-color: var(--botton-background);
+    padding: 1rem;
+    font-weight: bold;
+    font-size: .8rem;
+    transition: all .2s ease ;
+
+}
+#home-cont-bottom-right-special-btn:hover{
+transform: scale(1.01);
+
+}
+#home-cont-bottom-right-special-btn:active{  
+border-radius: 2px;
+transform: scale(1.09);
+}
+.home-cont-bottom-right-forms{
+    display: flex;
+    align-items: center;
+    min-width: 120px;
+    position: relative;
+    transition: all .2s ease ;
+    gap:1rem;
+}
+.home-cont-bottom-right-forms select
+ {
+    background: none;
+    border: none;
+    width: 55px;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+    
+}
+
+.home-cont-bottom-right-forms select option {
+    background-color: var( --background);
+    color: var(--text-color);
+    font-size: 0.7rem;
+
+}
+
+.home-cont-bottom-right-forms select option:focus-visible{
+    background-color: var(--botton-background);
+    cursor: pointer;
+
+}
+.home-cont-bottom-right-forms select::-webkit-scrollbar {
+    width: 4px;
+  }
+   
+  .home-cont-bottom-right-forms select::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+.home-cont-bottom-right-forms select::-webkit-scrollbar-thumb{
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.s{
+    color: white;
+    border-radius: none;
+}
+.home-cont-bottom-right-forms input {
+    background: #1e1e1e57;
+    color: var(--text-color);
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+    padding: .2rem .5rem;
+}
+.react-calendar{
+    width: 250px;
+    position: absolute;
+    bottom: 55px;
+    left: -16px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+  
+    transition: all .2s ease;
+
+}
+
+.react-calendar__navigation{
+    display: flex;
+}
+.react-calendar__navigation__label{
+    display: flex;
+    justify-content: center;
+}
+.react-calendar__month-view__weekdays{
+    justify-content: space-evenly;
+    padding-block: .5rem;
+    }
+.react-calendar__month-view__weekdays abbr{
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+ 
+    .home-cont-bottom {
+        gap: 1rem;
+        flex-direction: column-reverse;
+    }
+    .home-cont-bottom-left{ 
+        justify-content: flex-start;
+        padding-inline-start: .5rem;
+        gap: 1rem;
+    }
+  }
+  @media screen and (max-width: 670px) {
+    .home-cont-bottom-right {
+        flex-direction: column;
+        width: fit-content;
+    }
+    .home-cont-bottom-right-forms{
+        border-bottom: solid 1px black;
+        padding-block: .5rem;
+    }
+    .react-calendar{
+        bottom: -133px;
+        left: 163px;
+    }
+    .home-cont-bottom-right-forms select option{
+        font-size: .8rem;
+    }
+  }
+  @media screen and (max-width: 582px){
+    .home-cont-middle{
+        width: 270px;
+    }
+    .home-cont-middle h1 {
+        font-size: 3rem;
+    }
+    .home-cont-bottom {
+        margin-top: -5rem;
+    }
+  }

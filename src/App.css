@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;600;900&family=Montserrat:wght@300;400;600;900&family=Poppins:wght@400;500;600&display=swap');
+:root {
+  --background: rgb(28, 22, 20);
+  --text-color: #F4F1EE;
+  --special-text-color: #A08873;
+  --light-text-color:#5F5A58;
+  --light-text-color-2:#8F8A87;
+  --botton-background:#B48F72;
+  --selected-background:#110D0D;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+  scroll-behavior: smooth;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+  color:var(--text-color);
+  margin : 0px !important;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background);
+  font-family: 'Merienda';
 }
-
-.App-link {
-  color: #61dafb;
+a{
+  color: inherit;
+  text-decoration: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main{
+  width: 80%;
+  height: 100vh;
+  padding-inline: .2rem;
+  margin-inline: auto;
+  background:repeating-linear-gradient( to right, #f4f1ee21, var(--background) 1px, var(--background) 200px, var(--background) 0px );
 }
