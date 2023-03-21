@@ -26,7 +26,8 @@ a{
 }
 main{
   width: 80%;
-  height: 100vh;
+  min-height:100vh;
+  height: max-content;
   padding-inline: .2rem;
   margin-inline: auto;
   background:repeating-linear-gradient( to right, #f4f1ee21, var(--background) 1px, var(--background) 200px, var(--background) 0px );

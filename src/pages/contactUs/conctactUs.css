@@ -1,0 +1,126 @@
+.contact-cont{
+    width: 100%;
+    min-height: 81vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+  }
+  .contact-cont-header{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-gap: 2rem;
+    align-items: center;
+  }
+  .contact-cont-header-elements:nth-child(2){
+    border-left: solid 2px var(--botton-background);
+    border-right: solid 2px var(--botton-background);
+  }
+  .contact-cont-header-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .contact-cont-header-elements p , h5 {
+     margin-bottom: 0;
+     margin-top: .5rem;
+  }
+  .contact-cont-header-elements p{
+    font-size: .8rem;
+    margin-top: 0;
+  }
+  .contact-cont-header-elements h5,.contact-cont h3{
+    color:var(--botton-background);
+  }
+  .contact-cont-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .contact-cont-body-title p{
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: bold;
+  
+  }
+  .contact-cont-body-form{
+    width: 100%;
+  }
+  .contact-cont-body-form-self{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .contact-cont-body-form-self label{
+    font-size: .8rem;
+    margin-top: 1rem;
+    color:rgb(136,125,114);
+    font-weight: bold;
+  }
+  .contact-cont-body-form-self input,
+  .contact-cont-body-form-self textarea {
+    padding: 0.5rem;
+    font-size: .8rem; 
+    background-color: rgb(38 30 27);
+    border-radius: 0;
+    border: none;
+    color: var(--text-color);
+  
+  }
+  
+  .contact-cont-body-form-self textarea{
+    min-height: 80px;
+  }
+  .contact-cont-body-form-self button {
+    width: 50%;
+    margin-top: 1rem;
+    min-width: 100px;
+    align-self: center;
+    border: none;
+    color: black;
+    background-color: var(--botton-background);
+    padding: .5rem 1rem;
+    font-weight: bold;
+    transition: all .5s ease;
+    padding: 0.5rem 1rem;
+  
+  }
+  .contact-cont-body-form-self button:hover {
+    
+    transform: scale(1.1);
+    background-color: #cd8955;
+  
+  }
+  #error-input{
+    border: solid 2px red;
+    border-radius:  0.2rem;
+    animation: error .2s 2;
+  }
+  .error-msg{
+    font-size: .5rem;
+    color:red;
+  
+  }
+  .contact-cont-footer{
+    margin-top: 2rem;
+  }
+  .contact-cont-footer-icons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .contact-cont-footer-icons a {
+    text-decoration: none;
+    color:var(--text-color);
+    transition: all .2s ease;
+  }
+  
+  .contact-cont-footer-icons a:hover {
+    
+    transform: scale(1.09);
+    color:#f3973b;
+  }

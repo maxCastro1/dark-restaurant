@@ -1,25 +1,29 @@
 .navigation{
-    height: 100vh;
-    position: absolute;
+    min-height: 100vh;
+    height:100% ;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--background);
     z-index: 10;
-    width: 100vw;
+    min-width: 100vw;
+    width: 100%;
     visibility: visible;
     opacity: 1;
     transform:translateY(0%);
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     transition: all .5s ease-in-out;
+    overflow: hidden;
 
 }
 .navigation-closed{
     display: none;
     visibility: hidden;
     opacity: 0;
-    transform:translateY(-200%)
+    transform:translateY(-200%);
+    overflow: unset;
 }
 .navigation-links a {
     text-decoration: none;

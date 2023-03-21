@@ -1,15 +1,17 @@
-import React from 'react'
+import React ,{useState,useEffect} from 'react'
 import './navigation.css'
-const Navigation = (open) => {
-    console.log(open.props)
+import { NavLink } from 'react-router-dom'
+const Navigation = ({open,inClose}) => {
+    const [close,setClose] = useState(true);
+   console.log(inClose)
     return (
-         <div className={open.props ? "navigation" : "navigation-closed"}>
+         <div className={open ? "navigation" : "navigation-closed"}>
             <div className='navigation-links'>
                 <ul>
-                    <a href='/#'><li className='navigation-link'>About</li></a>
-                    <a href='/#'><li className='navigation-link'>Menu</li></a>
-                    <a href='/#'><li className='navigation-link'>Reservation</li></a>
-                    <a href='/#'><li className='navigation-link'>Contact</li></a>
+                    <NavLink to='/About'><li className='navigation-link'onClick={inClose} >About</li></NavLink>
+                    <NavLink to='/Menu'><li className='navigation-link' onClick={inClose}>Menu</li></NavLink>
+                    <NavLink to='/'><li className='navigation-link'onClick={inClose} >Reservation</li></NavLink>
+                    <NavLink to='/contact-Us'><li className='navigation-link' onClick={inClose}>Contact</li></NavLink>
                 </ul>
             </div>
             <div className='navigation-social-links'>

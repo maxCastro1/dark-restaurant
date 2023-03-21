@@ -4,6 +4,8 @@ import Calendar from 'react-calendar';
 import './home.css'
 import { FiArrowRightCircle } from "react-icons/fi";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
+import { NavLink } from 'react-router-dom'
+
 const Home = () => {
     const [value, setValue] = useState(new Date());
     const [dateOption, setDateOption] = useState("");
@@ -14,7 +16,6 @@ const Home = () => {
     }, [value])
     const handleTimeChange = () => {
         console.log(typeof value);
-      
         const size = JSON.stringify(value);
         const myArray = size.split("T");
         console.log(myArray)
@@ -40,10 +41,10 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='home-cont-bottom'>
-                    <a href='/#' className='home-cont-bottom-left'>
+                <NavLink to='/Menu' className='home-cont-bottom-left'>
                         <span>View our menu</span>
                         <button className='home-cont-bottom-left-icon'><FiArrowRightCircle /></button>
-                    </a>
+                        </NavLink>
                     <div className='home-cont-bottom-right'>
                         <div className='home-cont-bottom-right-forms'>
                             <span>Select date</span>
